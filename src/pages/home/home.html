@@ -18,37 +18,37 @@
 </ion-header>
 
 <ion-content class="homePage">
-  <ion-card>
+  <ion-card (click)="showInfo()">
 
-	  <ion-card-header>
-	    Card Header 1
-	  </ion-card-header>
-
-	  <ion-card-content>
-	    Mensaje 1 Mensaje 1 Mensaje 1 Mensaje 1 Mensaje 1 Mensaje 1 Mensaje 1 Mensaje 1
+	  <ion-card-content class="title">
+	  	{{ competicion.name }}
+	    IV Xornada II Circuito Concello Vigo Atletismo en pista - Series Municipais
+	  </ion-card-content>
+	  <ion-card-content class="inscritos">
+	    12 inscritos
 	  </ion-card-content>
 
 	</ion-card>
 
-  <ion-card>
+  <ion-card (click)="showInfo()">
 
-	  <ion-card-header>
+	  <ion-card-content class="title">
 	    Card Header 2
-	  </ion-card-header>
+	  </ion-card-content>
 
-	  <ion-card-content>
+	  <ion-card-content class="inscritos">
 	    Mensaje 2 Mensaje 2 Mensaje 2 Mensaje 2 Mensaje 2 Mensaje 2 Mensaje 2 Mensaje 2
 	  </ion-card-content>
 
 	</ion-card>
 
-  <ion-card>
+  <ion-card (click)="showInfo()">
 
-	  <ion-card-header>
+	  <ion-card-content class="title">
 	    Card Header 3
-	  </ion-card-header>
+	  </ion-card-content>
 
-	  <ion-card-content>
+	  <ion-card-content class="inscritos">
 	    Mensaje 3 Mensaje 3 Mensaje 3 Mensaje 3 Mensaje 3 Mensaje 3 Mensaje 3 Mensaje 3
 	  </ion-card-content>
 

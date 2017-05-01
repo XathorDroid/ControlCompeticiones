@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { NavController, AlertController, ToastController } from 'ionic-angular';
 
 import { LoginPage } from '../login/login';
@@ -10,6 +10,8 @@ import { MoreinfoPage } from '../moreinfo/moreinfo';
   templateUrl: 'home.html'
 })
 export class HomePage {
+
+  @ViewChild(MoreinfoPage) moreInfo: MoreinfoPage;
 
   constructor(public navCtrl: NavController, public alertCtrl: AlertController, public toastCtrl: ToastController) {
 
@@ -51,6 +53,10 @@ export class HomePage {
 
   showAbout() {
     this.navCtrl.push(AboutPage);
+  }
+
+  showInfo() {
+    this.navCtrl.push(MoreinfoPage);
   }
 
 }

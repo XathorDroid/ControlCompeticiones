@@ -1,12 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-/**
- * Generated class for the Moreinfo page.
- *
- * See http://ionicframework.com/docs/components/#navigation for more info
- * on Ionic pages and navigation.
- */
 @IonicPage()
 @Component({
   selector: 'page-moreinfo',
@@ -14,11 +8,18 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class MoreinfoPage {
 
+  competicion: any;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+  	this.competicion = navCtrl.data.competicion;
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad Moreinfo');
+  }
+
+  public putTitle(competicionGet) {
+  	this.competicion = competicionGet;
   }
 
 }
