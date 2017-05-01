@@ -1,1 +1,16 @@
-<ion-nav [root]="rootPage"></ion-nav>
+<div class="blue-theme">
+  <!-- <ion-menu  persistent="true" [content]="content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>MENÚ</ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content class="menuContent">
+    <side-menu-content [accordionMode]="true" [options]="options" (selectOption)="selectOption($event)"></side-menu-content>
+    </ion-content>
+
+  </ion-menu> -->
+
+  <ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
+</div>

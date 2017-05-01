@@ -1,14 +1,57 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
+
+    <ion-title>Competiciones</ion-title>
+
+  	<ion-buttons end>
+      <button ion-button icon-only (click)="showConfirm()">
+        <ion-icon name="power" class="iconPower"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-buttons start>
+      <button ion-button icon-only (click)="showAbout()">
+        <ion-icon name="information-circle" class="iconInfo"></ion-icon>
+      </button>
+    </ion-buttons>
+
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content class="homePage">
+  <ion-card>
+
+	  <ion-card-header>
+	    Card Header 1
+	  </ion-card-header>
+
+	  <ion-card-content>
+	    Mensaje 1 Mensaje 1 Mensaje 1 Mensaje 1 Mensaje 1 Mensaje 1 Mensaje 1 Mensaje 1
+	  </ion-card-content>
+
+	</ion-card>
+
+  <ion-card>
+
+	  <ion-card-header>
+	    Card Header 2
+	  </ion-card-header>
+
+	  <ion-card-content>
+	    Mensaje 2 Mensaje 2 Mensaje 2 Mensaje 2 Mensaje 2 Mensaje 2 Mensaje 2 Mensaje 2
+	  </ion-card-content>
+
+	</ion-card>
+
+  <ion-card>
+
+	  <ion-card-header>
+	    Card Header 3
+	  </ion-card-header>
+
+	  <ion-card-content>
+	    Mensaje 3 Mensaje 3 Mensaje 3 Mensaje 3 Mensaje 3 Mensaje 3 Mensaje 3 Mensaje 3
+	  </ion-card-content>
+
+	</ion-card>
+
 </ion-content>

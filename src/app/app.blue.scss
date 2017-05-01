@@ -1,0 +1,17 @@
+.blue-theme {
+
+  	font-family: "Open Sans", Arial, Verdana;
+
+	.toolbar-background {
+    	background-color: color($colors, primary);
+  	}
+
+  	.toolbar-title {
+  		color: black;
+  	}
+
+  	ion-icon {
+  		color: black;
+  	}
+	
+}

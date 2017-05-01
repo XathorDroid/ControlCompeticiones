@@ -1,3 +1,36 @@
-page-home {
+.ios, .md {
 
+	page-home {
+
+		.homePage {
+			// background: #01A0E2;
+			background-color: color($colors, secondary);
+		}
+
+	}
+
+}
+
+.ios {
+	.iconPower {
+		margin-right: 5px;
+	}
+
+	.iconInfo {
+		margin-left: 5px;
+	}
+}
+
+.md {
+	.iconInfo {
+		margin-right: 5px;
+	}
+
+	.iconPower {
+		margin-right: 5px;
+	}
+}
+
+.toastStyle {
+	text-align:center;
 }

@@ -1,0 +1,25 @@
+<ion-content class="form">
+
+	<form (ngSubmit)="login()" #registerForm="ngForm" class="centerDiv">
+
+		<div class="title">
+			<h2>Iniciar Sesión</h2>
+		</div>
+
+		<div class="dataInput" align="center">
+            <ion-item>
+              <ion-input type="text" placeholder="Usuario" name="user" [(ngModel)]="registerCredentials.email" required></ion-input>
+            </ion-item>
+            
+            <ion-item>
+              <ion-input type="password" placeholder="Contraseña" name="password" [(ngModel)]="registerCredentials.password" required></ion-input>
+            </ion-item>
+        </div>
+            
+      <ion-row class="buttonLog">
+          <button ion-button class="submit-btn" full type="submit" [disabled]="!registerForm.form.valid">Conectarse</button>
+      </ion-row>
+      
+    </form>
+
+</ion-content>
