@@ -3,7 +3,6 @@
 	page-home {
 
 		.homePage {
-			// background: #01A0E2;
 			background-color: color($colors, secondary);
 		}
 
@@ -28,6 +27,25 @@
 	.iconInfo {
 		margin-left: 5px;
 	}
+
+	ion-card {
+  		margin-bottom:-20px !important;
+	}
+
+	.btnOk {
+		color: green;
+		font-size: 3.5em !important;
+	}
+
+	.btnCancel {
+		color: red;
+		font-size: 3.5em !important;
+	}
+
+	.btnSee {
+		margin-right: 10px;
+		color: white;
+	}
 }
 
 .md {
@@ -37,6 +55,21 @@
 
 	.iconPower {
 		margin-right: 5px;
+	}
+
+	.btnOk {
+		color: green;
+		font-size: 2.2em !important;
+	}
+
+	.btnCancel {
+		color: red;
+		font-size: 2.2em !important;
+	}
+
+	.btnSee {
+		margin-right: 10px;
+		color: white;
 	}
 }
 

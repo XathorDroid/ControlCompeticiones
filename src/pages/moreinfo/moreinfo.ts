@@ -8,18 +8,18 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class MoreinfoPage {
 
-  competicion: any;
+  card: any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-  	this.competicion = navCtrl.data.competicion;
+  	this.card = navParams.data.card;
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad Moreinfo');
   }
 
-  public putTitle(competicionGet) {
+  /*public putTitle(competicionGet) {
   	this.competicion = competicionGet;
-  }
+  } */
 
 }

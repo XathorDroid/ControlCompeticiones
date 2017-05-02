@@ -18,40 +18,42 @@
 </ion-header>
 
 <ion-content class="homePage">
-  <ion-card (click)="showInfo()">
 
-	  <ion-card-content class="title">
-	  	{{ competicion.name }}
-	    IV Xornada II Circuito Concello Vigo Atletismo en pista - Series Municipais
-	  </ion-card-content>
-	  <ion-card-content class="inscritos">
-	    12 inscritos
-	  </ion-card-content>
+	<ion-list *ngFor="let card of cardList">
+		<ion-card>
+			<ion-card-content class="title">
+				{{ card.title }}
+			</ion-card-content>
+			<ion-row align-items-center>
+				<ion-col>
+					<ion-card-content class="inscritos">
+						Fecha: {{ card.date }}
+					</ion-card-content>
+				</ion-col>
+				<ion-col>
+					<ion-card-content class="inscritos" align="right">
+						{{ card.inscrits }}
+					</ion-card-content>
+				</ion-col>
+			</ion-row>
 
-	</ion-card>
-
-  <ion-card (click)="showInfo()">
-
-	  <ion-card-content class="title">
-	    Card Header 2
-	  </ion-card-content>
-
-	  <ion-card-content class="inscritos">
-	    Mensaje 2 Mensaje 2 Mensaje 2 Mensaje 2 Mensaje 2 Mensaje 2 Mensaje 2 Mensaje 2
-	  </ion-card-content>
-
-	</ion-card>
-
-  <ion-card (click)="showInfo()">
-
-	  <ion-card-content class="title">
-	    Card Header 3
-	  </ion-card-content>
-
-	  <ion-card-content class="inscritos">
-	    Mensaje 3 Mensaje 3 Mensaje 3 Mensaje 3 Mensaje 3 Mensaje 3 Mensaje 3 Mensaje 3
-	  </ion-card-content>
-
-	</ion-card>
+			<ion-row align-items-center>
+				<ion-col>
+					<button ion-button icon-right small (click)="showInfo(card)" style="margin-left: 13px;">
+						<ion-icon name="eye" class="btnSee"></ion-icon>
+						<div>Ver detalles</div>
+					</button>
+				</ion-col>
+				<ion-col align="right">
+					<button ion-button icon-right clear small>
+						<ion-icon name="close" class="btnCancel"></ion-icon>
+					</button>
+					<button ion-button icon-right clear small>
+						<ion-icon name="checkmark" class="btnOk"></ion-icon>
+					</button>
+				</ion-col>
+			</ion-row>
+		</ion-card>
+	</ion-list>	
 
 </ion-content>

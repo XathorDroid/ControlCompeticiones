@@ -1,12 +1,14 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>moreinfo</ion-title>
+    <ion-title>{{ card.title }}</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-	<h1>{{ competicion }}</h1>
+	<p class="title">{{ card.title }}</p>
+	<p><strong>Fecha:</strong> {{ card.date }}</p>
+	<p><strong>Inscritos:</strong> {{ card.inscrits }}</p>
 </ion-content>
