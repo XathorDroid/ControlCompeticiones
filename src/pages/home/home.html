@@ -21,35 +21,32 @@
 
 	<ion-list *ngFor="let card of cardList">
 		<ion-card>
-			<ion-card-content class="title">
+			<ion-card-content class="title" (click)="showInfo(card)">
 				{{ card.title }}
 			</ion-card-content>
-			<ion-row align-items-center>
+			<ion-row align-items-center (click)="showInfo(card)">
 				<ion-col>
 					<ion-card-content class="inscritos">
 						Fecha: {{ card.date }}
 					</ion-card-content>
 				</ion-col>
-				<ion-col>
+				<!-- <ion-col>
 					<ion-card-content class="inscritos" align="right">
 						{{ card.inscrits }}
 					</ion-card-content>
-				</ion-col>
+				</ion-col> -->
 			</ion-row>
 
 			<ion-row align-items-center>
-				<ion-col>
-					<button ion-button icon-right small (click)="showInfo(card)" style="margin-left: 13px;">
-						<ion-icon name="eye" class="btnSee"></ion-icon>
-						<div>Ver detalles</div>
-					</button>
+				<ion-col (click)="showInfo(card)">
+					<ion-card-content class="inscritos" align="right">
+						{{ card.inscrits }} inscritos
+					</ion-card-content>
 				</ion-col>
-				<ion-col align="right">
-					<button ion-button icon-right clear small>
-						<ion-icon name="close" class="btnCancel"></ion-icon>
-					</button>
-					<button ion-button icon-right clear small>
-						<ion-icon name="checkmark" class="btnOk"></ion-icon>
+				<ion-col>
+					<button ion-button icon-right small (click)="changeButton(card)" [color]="card.btnColor" class="btnOkCancel">
+						<ion-icon [name]="card.btnIcon" class="btnSee"></ion-icon>
+						{{ card.btnText }}
 					</button>
 				</ion-col>
 			</ion-row>
