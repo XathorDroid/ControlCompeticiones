@@ -7,6 +7,22 @@
 			font-weigth: bold;
 		}
 
+		.inscritsList {
+			border: 1px black;
+			border-style: solid;
+			width: 100% !important;
+			box-shadow: -2px 2px grey;
+		}
+
+		.btnOkCancel {
+			width: 100% !important;
+			margin-top: 15px;
+		}
+
+		ion-item {
+			text-shadow: -0.3px 0.3px grey;
+		}
+
 	}
 
 }

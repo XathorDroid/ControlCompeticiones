@@ -30,17 +30,12 @@
 						Fecha: {{ card.date }}
 					</ion-card-content>
 				</ion-col>
-				<!-- <ion-col>
-					<ion-card-content class="inscritos" align="right">
-						{{ card.inscrits }}
-					</ion-card-content>
-				</ion-col> -->
 			</ion-row>
 
 			<ion-row align-items-center>
 				<ion-col (click)="showInfo(card)">
-					<ion-card-content class="inscritos" align="right">
-						{{ card.inscrits }} inscritos
+					<ion-card-content class="inscritos">
+						{{ card.inscritsList.length }} inscritos
 					</ion-card-content>
 				</ion-col>
 				<ion-col>

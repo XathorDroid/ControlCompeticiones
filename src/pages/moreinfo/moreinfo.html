@@ -10,5 +10,14 @@
 <ion-content padding>
 	<p class="title">{{ card.title }}</p>
 	<p><strong>Fecha:</strong> {{ card.date }}</p>
-	<p><strong>Inscritos:</strong> {{ card.inscrits }}</p>
+	<p align="right"><i>{{ card.inscritsList.length }} inscritos</i></p>
+	<div class="inscritsList">
+		<ion-list inset *ngFor="let inscrit of card.inscritsList">
+			<ion-item><ion-icon name="arrow-forward" item-left></ion-icon>  {{ inscrit.name }}</ion-item>
+		</ion-list>
+	</div>
+	<button ion-button icon-right small (click)="changeButton(card)" [color]="card.btnColor" class="btnOkCancel">
+		<ion-icon [name]="card.btnIcon" class="btnSee"></ion-icon>
+		{{ card.btnText }}
+	</button>
 </ion-content>

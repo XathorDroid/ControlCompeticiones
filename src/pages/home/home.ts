@@ -29,7 +29,30 @@ export class HomePage {
         btnIcon: 'checkmark',
         btnText: 'Inscribirse',
         btnColor: 'inscribir',
-        iconBool: true
+        iconBool: true,
+        inscritsList: [
+        {
+          name: 'Paco Primero'
+        },
+        {
+          name: 'Rodolfo Primero'
+        },
+        {
+          name: 'Enrique Primero'
+        },
+        {
+          name: 'Patricia Primero'
+        },
+        {
+          name: 'Esteban Primero'
+        },
+        {
+          name: 'Andres Primero'
+        },
+        {
+          name: 'Laura Primero'
+        }
+        ]
       },
       {
         title: 'CAMPEONATO DE ESPAÑA 10000 DE VETERANOS (13 AL 14)',
@@ -39,7 +62,33 @@ export class HomePage {
         btnIcon: 'checkmark',
         btnText: 'Inscribirse',
         btnColor: 'inscribir',
-        iconBool: true
+        iconBool: true,
+        inscritsList: [
+        {
+          name: 'Paco Segundo'
+        },
+        {
+          name: 'Rodolfo Segundo'
+        },
+        {
+          name: 'Enrique Segundo'
+        },
+        {
+          name: 'Patricia Segundo'
+        },
+        {
+          name: 'Esteban Segundo'
+        },
+        {
+          name: 'Andres Segundo'
+        },
+        {
+          name: 'Laura Segundo'
+        },
+        {
+          name: 'Carla Segundo'
+        }
+        ]
       },
       {
         title: 'II Trofeo Atletismo Barbanza- DÍA DAS LETRAS GALEGAS',
@@ -49,7 +98,33 @@ export class HomePage {
         btnIcon: 'checkmark',
         btnText: 'Inscribirse',
         btnColor: 'inscribir',
-        iconBool: true
+        iconBool: true,
+        inscritsList: [
+        {
+          name: 'Paco Tercero'
+        },
+        {
+          name: 'Rodolfo Tercero'
+        },
+        {
+          name: 'Enrique Tercero'
+        },
+        {
+          name: 'Patricia Tercero'
+        },
+        {
+          name: 'Esteban Tercero'
+        },
+        {
+          name: 'Andres Tercero'
+        },
+        {
+          name: 'Laura Tercer'
+        },
+        {
+          name: 'Carla Tercero'
+        }
+        ]
       },
       {
         title: 'CAMPIONATO DE GALICIA BENXAMIN, ALEVIN E ALEVIN POR EQUIPOS',
@@ -59,7 +134,33 @@ export class HomePage {
         btnIcon: 'checkmark',
         btnText: 'Inscribirse',
         btnColor: 'inscribir',
-        iconBool: true
+        iconBool: true,
+        inscritsList: [
+        {
+          name: 'Paco Cuarto'
+        },
+        {
+          name: 'Rodolfo Cuarto'
+        },
+        {
+          name: 'Enrique Cuarto'
+        },
+        {
+          name: 'Patricia Cuarto'
+        },
+        {
+          name: 'Esteban Cuarto'
+        },
+        {
+          name: 'Andres Cuarto'
+        },
+        {
+          name: 'Laura Cuarto'
+        },
+        {
+          name: 'Carla Cuarto'
+        }
+        ]
       }
     ];
   }
